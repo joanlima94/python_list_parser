@@ -21,7 +21,6 @@ LISTA:
 
 CONT:
     ATOM {}
-    |
     ;
 
 ATOM:
@@ -30,6 +29,7 @@ ATOM:
     | ASPAS STRING ASPAS {}
     | LISTA {}
     | ATOM VIRGULA ATOM {}
+    | STRING NUM {}
     ;
 
 %%

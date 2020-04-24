@@ -20,6 +20,10 @@ void yyerror(char *);
 
 [a-zA-Z]+ {return STRING;}
 
+["] {return ASPAS;}
+
+[,] {return VIRGULA;}
+
 . ;
 
 %%
